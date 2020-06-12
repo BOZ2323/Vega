@@ -2,6 +2,9 @@
   padding: 0;
   margin: 0;
 }
+*:focus {
+  outline: none;
+}
 
 html, body {
   
@@ -14,6 +17,13 @@ html, body {
 .App {
   min-height: 100vh;
   margin: 0;
+}
+.searchFieldBackground{
+  display: flex;
+  justify-content: center;
+  background-color: #e9fac8;
+  margin-bottom: 2px;
+  height: 50px;
 }
 
 .navbar {
@@ -57,21 +67,30 @@ li a:hover {
 }
 
 .search-form{
-  min-height: 10vh;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .search-bar{
-  width: 20%;
+  width: 50%;
   border: 1px;
-  border-color: #FFCD8E;
-  padding: 10px
+  border-color: #e7fac8;
+  padding: 10px;
+  
 }
 .search-button{
-  background: #FFCD8E;
+  background: #c9f395;
   border: 1px;
   padding: 10px 20px;
   color: black;
+}
+.search-frontpage-button{
+  background: #c9f395;
+  border: 1px;
+  padding: 10px 20px;
+  margin: 10% 15%;
+  color: black;
+  float: right;
+    
 }

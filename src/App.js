@@ -1,10 +1,17 @@
 import React, { useState, useEffect } from 'react';
 import './App.css';
-// import Form from './Form'
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from "react-router-dom";
+// import Search from './Search'
 import yummies from './yummies.json'
 import Logo from './Logo'
 import Menu from './Menu'
 import RecipeList from './RecipeList';
+import Search from './Search';
 
 
 
@@ -39,14 +46,20 @@ const getSearch = async (e) =>{
 }
 
   return (
-    <div className="App">
-      {/* <Form getRecipes={getRecipes} getSearch={getSearch} updateSearch={updateSearch}/> */}
-      <Logo />
-      <Menu />
-      <RecipeList recipes={recipes} search={search} query={query}/>
-      
-      
-    </div>
+    <Router>
+      <div className="App">
+          <Switch>
+            {/* <Route path="/" exact component={Search}/> */}
+            {/* <Route path="/search" component={Search}/> */}
+            <Link to="/search" ><button className="search-frontpage-button">search</button></Link>
+          </Switch>
+          <Logo />
+          {/* <Search getRecipes={getRecipes} getSearch={getSearch} updateSearch={updateSearch}/> */}
+          <Menu />
+          <RecipeList recipes={recipes} search={search} query={query}/> 
+        
+      </div>
+    </Router>
   );
 }
 

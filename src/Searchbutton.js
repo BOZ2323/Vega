@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-const Searchbutton = () => {
+const SearchButton = () => {
     
     return (
         <div>
@@ -9,4 +9,4 @@ const Searchbutton = () => {
         </div>
     )
 }
-export default Searchbutton;
+export default SearchButton;

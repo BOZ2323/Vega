@@ -6,12 +6,11 @@ import {
   Route,
   Link
 } from "react-router-dom";
-// import Search from './Search'
 import yummies from './yummies.json'
 import Logo from './Logo'
 import Menu from './Menu'
 import RecipeList from './RecipeList';
-import Search from './Search';
+import Search from './Search'
 
 
 
@@ -25,6 +24,7 @@ function App() {
   const [recipes, setRecipes] = useState([])
   const [search, setSearch] = useState([])
   const [query, setQuery] = useState([])
+  
   
 useEffect(()=>{
   getRecipes();
@@ -44,19 +44,31 @@ const getSearch = async (e) =>{
   e.preventDefault();
   await setQuery(search);
 }
+const Knopf = ({getRecipes, getSearch, updateSearch}) => {
+  const [showResults, setShowResults] = React.useState(false)
+  const onClick = () => setShowResults(true)
+  return (
+      <div>
+          <input type="submit" value="Knopf" onClick={onClick} />
+          { showResults ? <Search getRecipes={getRecipes} getSearch={getSearch} updateSearch={updateSearch}/> : null }
+      </div>
+  )
+}
 
   return (
     <Router>
       <div className="App">
           <Switch>
-            {/* <Route path="/" exact component={Search}/> */}
             {/* <Route path="/search" component={Search}/> */}
-            <Link to="/search" ><button className="search-frontpage-button">search</button></Link>
+            {/* <Link to="/search" ><button className="search-frontpage-button">search</button></Link> */}
           </Switch>
+          <Search getRecipes={getRecipes} getSearch={getSearch} updateSearch={updateSearch}/>
           <Logo />
+          
+          
           {/* <Search getRecipes={getRecipes} getSearch={getSearch} updateSearch={updateSearch}/> */}
-          <Menu />
-          <RecipeList recipes={recipes} search={search} query={query}/> 
+          <Menu />  
+          <RecipeList recipes={recipes} query={query}/> 
         
       </div>
     </Router>

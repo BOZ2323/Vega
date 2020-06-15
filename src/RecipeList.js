@@ -3,7 +3,7 @@ import styles from './RecipeList.module.css'
 
 
 
-const RecipeList = ({search, recipes, query}) => {
+const RecipeList = ({recipes, query}) => {
 
     const recipeList = recipes.length ? (recipes.filter( recipe => recipe.Vegetable.includes(query)).map( recipe => {
         let uniqueId = Math.random()
@@ -11,7 +11,7 @@ const RecipeList = ({search, recipes, query}) => {
                     <div className={styles.card} key={uniqueId}>
                         
                         <div className={styles.opaqueBox} >
-                            <p className={styles.cardHeading}>{recipe.Vegetable}</p>
+                            <span className={styles.cardHeading}>{recipe.Vegetable}</span>
                         </div>
                         <img className={styles.foto} src="https://source.unsplash.com/random" alt="random pic"/>
                     </div>

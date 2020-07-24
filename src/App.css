@@ -14,11 +14,11 @@ html, body {
   overflow-x:hidden; 
 }
 
-.App {
+.app {
   min-height: 100vh;
   margin: 0;
 }
-.searchFieldBackground{
+.searchBackground{
   display: flex;
   justify-content: center;
   background-color: #e9fac8;
@@ -92,3 +92,4 @@ li a:hover {
   float: right;
     
 }
+.hidden { display:none; }

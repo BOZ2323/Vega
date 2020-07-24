@@ -3,121 +3,141 @@
       "id": 2001,
       "Vegetable": "Aubergine",
       "Spicy": true,
-      "Preparation": "fried"
+      "Preparation": "fried",
+      "Toprated": true
     },
     {
       "id": 1902,
       "Vegetable": "Broccoli",
       "Spicy": true,
-      "Preparation": "fried"
+      "Preparation": "fried",
+      "Toprated": false
     },
     {
       "id": 1903,
       "Vegetable": "Cauliflower",
       "Spicy": true,
-      "Preparation": "fried"
+      "Preparation": "fried",
+      "Toprated": true
     },
     {
       "id": 2004,
       "Vegetable": "Aubergine",
       "Spicy": false,
-      "Preparation": "Chevrolet"
+      "Preparation": "Chevrolet",
+      "Toprated": false
     },
     {
       "id": 2005,
       "Vegetable": "Tiger",
       "Spicy": false,
-      "Preparation": "Chevrolet"
+      "Preparation": "Chevrolet",
+      "Toprated": true
     },
     {
       "id": 2006,
       "Vegetable": "Antelope, four-horned",
       "Spicy": false,
-      "Preparation": "Mercedes-Benz"
+      "Preparation": "Mercedes-Benz",
+      "Toprated": false
     },
     {
       "id": 2007,
       "Vegetable": "Shrike, crimson-breasted",
       "Spicy": false,
-      "Preparation": "Mitsubishi"
+      "Preparation": "Mitsubishi",
+      "Toprated": true
     },
     {
       "id": 2008,
       "Vegetable": "Squirrel, antelope ground",
       "Spicy": false,
-      "Preparation": "Kia"
+      "Preparation": "Kia",
+      "Toprated": false
     },
     {
       "id": 2009,
       "Vegetable": "Long-finned pilot whale",
       "Spicy": true,
-      "Preparation": "Mercedes-Benz"
+      "Preparation": "Mercedes-Benz",
+      "Toprated": true
     },
     {
       "id": 2010,
       "Vegetable": "Oriental white-backed vulture",
       "Spicy": true,
-      "Preparation": "Chrysler"
+      "Preparation": "Chrysler",
+      "Toprated": false
     },
     {
       "id": 2011,
       "Vegetable": "Blue-breasted cordon bleu",
       "Spicy": false,
-      "Preparation": "Ford"
+      "Preparation": "Ford",
+      "Toprated": false
     },
     {
       "id": 1912,
       "Vegetable": "Mississippi alligator",
       "Spicy": true,
-      "Preparation": "Toyota"
+      "Preparation": "Toyota",
+      "Toprated": true
     },
     {
       "id": 1913,
       "Vegetable": "Aubergine",
       "Spicy": false,
-      "Preparation": "Mitsubishi"
+      "Preparation": "Mitsubishi",
+      "Toprated": false
     },
     {
       "id": 1914,
       "Vegetable": "Sulfur-crested cockatoo",
       "Spicy": true,
-      "Preparation": "Acura"
+      "Preparation": "Acura",
+      "Toprated": true
     },
     {
       "id": 2015,
       "Vegetable": "Topi",
       "Spicy": true,
-      "Preparation": "Chevrolet"
+      "Preparation": "Chevrolet",
+      "Toprated": false
     },
     {
       "id": 2016,
       "Vegetable": "Bunting, crested",
       "Spicy": true,
-      "Preparation": "GMC"
+      "Preparation": "GMC",
+      "Toprated": false
     },
     {
       "id": 1917,
       "Vegetable": "Teal, hottentot",
       "Spicy": true,
-      "Preparation": "Ford"
+      "Preparation": "Ford",
+      "Toprated": true
     },
     {
       "id": 2018,
       "Vegetable": "Desert kangaroo rat",
       "Spicy": true,
-      "Preparation": "Mazda"
+      "Preparation": "Mazda",
+      "Toprated": false
     },
     {
       "id": 1919,
       "Vegetable": "Land iguana",
       "Spicy": false,
-      "Preparation": "Chevrolet"
+      "Preparation": "Chevrolet",
+      "Toprated": true
     },
     {
       "id": 1920,
       "Vegetable": "Zorro, azara's",
       "Spicy": true,
-      "Preparation": "Chevrolet"
+      "Preparation": "Chevrolet",
+      "Toprated": false
     }
   ]
   

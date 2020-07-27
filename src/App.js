@@ -5,7 +5,7 @@ import yummies from "./yummies.json";
 import Logo from "./Logo";
 import Menu from "./Menu";
 import RecipeList from "./RecipeList";
-import SearchButton from "./SearchButton";
+import SearchButton from "./Searchbutton";
 
 // import { faHome } from "@fortawesome/free-solid-svg-icons";
 // import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";

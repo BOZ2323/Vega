@@ -3,7 +3,14 @@ import React, { useState } from "react";
 const SearchButton = ({ getRecipes, getSearchResults, updateSearch }) => {
   const [showResults, setShowResults] = useState(false);
   const [showButton, setShowButton] = useState(true);
-  const onClick = () => setShowResults(true) && setShowButton(false);
+
+  const handleResults = () => {
+    setShowResults(true);
+    setShowButton(false);
+  }
+
+  const onClick = () => handleResults();
+
   return (
     <div>
       {showButton === true ?(<div>

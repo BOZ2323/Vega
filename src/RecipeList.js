@@ -12,7 +12,7 @@ const RecipeList = ({ recipes, search }) => {
               <div className={styles.opaqueBox}>
                 <span className={styles.cardHeading}>{recipe.Vegetable}</span>
               </div>
-              <img className={styles.foto} src="https://source.unsplash.com/random" alt="random pic" />
+              <img className={styles.foto} src="https://source.unsplash.com/random" alt="random pics" />
             </div>
           );
         })

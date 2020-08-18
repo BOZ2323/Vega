@@ -1,6 +1,6 @@
 import React from "react";
 
-const Menu = ({ recipes, query, filtered }) => {
+const Menu = ({ recipes, filter }) => {
   const onChangeHandler = (e) => {};
 
   return (

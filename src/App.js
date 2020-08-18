@@ -6,15 +6,17 @@ import Logo from "./Logo";
 import Menu from "./Menu";
 import RecipeList from "./RecipeList";
 import SearchButton from "./Searchbutton";
+import ShowIngrediants from "./components/RecipeDetails/ShowIngrediants";
+import ShowIntro from "./components/RecipeDetails/ShowIntro";
+import ShowMethod from "./components/RecipeDetails/ShowMethod";
 
 // import { faHome } from "@fortawesome/free-solid-svg-icons";
 // import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const App = () => {
   const [recipes, setRecipes] = useState([]);
-  const [search, setSearch] = useState([]);
   const [query, setQuery] = useState([]);
-  const [filtered, setFilter] = useState([]);
+  const [filter, setFilter] = useState([]);
 
   useEffect(() => {
     getRecipes();
@@ -26,35 +28,31 @@ const App = () => {
   };
 
   const updateSearch = async (e) => {
-    await setSearch(e.target.value);
-    console.log("search", search);
-  };
-  // Next step: Query can be replaced by search, it is superfluent
-
-  const  getSearchResults = async (e) => {
-    e.preventDefault();
-    await setQuery(search);
+    await setQuery(e.target.value);
+    console.log("query", query);
   };
 
   const filteredButtonResults = async (e) => {
     await setFilter(e.target.value);
-    console.log("filtered", filtered);
+    console.log("filter", filter);
     console.log("e.target", e.target.value);
   };
+
 
   return (
     <Router>
       <div className="app">
         <Switch>
-          {/* <Route path="/search" component={Search}/> */}
-          {/* <Link to="/search" ><button className="search-frontpage-button">search</button></Link> */}
+         
+          <Route path="/ingrediants" exact component={ShowIngrediants}/>
+          <Route path="/intro" exact component={ShowIntro}/>
+          <Route path="/method" exact component={ShowMethod}/>
+          {/* <Link to="/query" ><button className="query-frontpage-button">query</button></Link> */}
         </Switch>
-        <SearchButton getRecipes={getRecipes} getSearchResults={getSearchResults}  updateSearch={updateSearch} />
+        <SearchButton updateSearch={updateSearch} />
         <Logo />
-
-        {/* <Search getRecipes={getRecipes} =getSearchResults {}getSearchResults  updateSearch={updateSearch}/> */}
-        <Menu recipes={recipes} filteredButtonResults={filteredButtonResults} filtered={filtered} query={query} />
-        <RecipeList recipes={recipes} search={search} />
+        <Menu recipes={recipes} filteredButtonResults={filteredButtonResults} filter={filter} />
+        <RecipeList recipes={recipes} query={query} />
       </div>
     </Router>
   );
